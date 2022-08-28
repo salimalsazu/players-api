@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-5xl text-red-500 font-extrabold mt-20 mb-20">Search Your Favourite Player</h1>
+    </header>
+    <section class="flex justify-center items-center h-52">
+        <input class="border-2 bg-lime-200 px-14 py-3 text-gray-700 font-bold" type="text" name="" id="search-player"
+            placeholder="Type a Player Name">
+        <button onclick="searchOption()"
+            class="px-14 py-3 bg-blue-500 border-2 rounded-md font-extrabold">Search</button>
+    </section>
+
+    <section>
+        <div id="player-container"
+            class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-1 justify-center items-center">
+
+        </div>
+    </section>
+
+    <script src="./sports.js"></script>
+</body>
+
+</html>
