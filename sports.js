@@ -11,7 +11,7 @@ const displayPlayer = players => {
     playerContainer.innerHTML = ``;
     players.forEach(player => {
         const playerId = document.createElement('Div');
-        playerId.classList.add('card');
+        playerId.classList.add('card-box');
         playerId.innerHTML = `
         <figure><img src=" ${player.strRender ? player.strRender : 'No Image'}" alt="player"></figure>
         <div class="card-body flex flex-col justify-center items-center">
